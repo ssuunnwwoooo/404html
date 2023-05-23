@@ -1,0 +1,127 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* ▼ 위에서 나오는 배너 ▼ */
+
+/* 상단 화면에 꽉 찬 박스로 만들기 */
+.top_banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: tomato;
+}
+
+.top_banner .inner {
+    height: 150px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* .top_banner.on 붙이기!!!! */
+.top_banner.on .inner {
+    height: 0;
+
+}
+
+
+/* 튀어나온 버튼 만들기 */
+.top_banner .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-100%, 100%);
+    margin: 0 0 0 600px;
+    background: tomato;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.top_banner .btn::after {
+    content: "위로 올려";
+}
+
+.top_banner.on .btn::after {
+    content: "아래로 내려";
+}
+
+/* 클릭에따라 바뀌는 아이콘 */
+.top_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+/* ▲ 위에서 나오는 배너 ▲ */
+
+
+/* ▼ 오른쪽에서 나오는 배너 ▼ */
+.right_banner {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+
+    width: 300px;
+    height: 400px;
+    background: lightseagreen;
+    transition: 0.5s;
+}
+
+.right_banner.on {
+    right: 0;
+}
+
+.right_banner .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+}
+
+.right_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.right_banner .btn i {
+    padding: 10px;
+    background: lightseagreen;
+    color: #fff;
+    font-size: 20px;
+}
+
+/*  ▼ 왼쪽에서 나오는 배너 ▼ */
+
+.left_banner {
+    position: fixed;
+    top: 50%;
+    left: 0;
+
+    width: 300px;
+    height: 400px;
+    background: lightpink;
+    transition: 0.5s;
+}
+
+.left_banner.on {
+    left: -300px;
+}
+
+.left_banner .btn {
+    position: absolute;
+    top: 0;
+    right: -80px;
+    transform: translate(-100%, 0);
+}
+
+.left_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.left_banner .btn i {
+    padding: 10px;
+    background: lightpink;
+    color: #fff;
+    font-size: 20px;
+}

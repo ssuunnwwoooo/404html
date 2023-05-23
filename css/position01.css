@@ -1,0 +1,62 @@
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: tomato;
+    width: 300px;
+    /* 이미지크기*/
+    z-index: 1;
+    /* 돋보이고싶은 요소에 z-index:1 ,
+    하지만 z-index가 많다면 순서따짐 */
+}
+
+.popup2 {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: tomato;
+    width: 300px;
+    z-index: 1;
+}
+
+.popup3 {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: tomato;
+    width: 300px;
+
+}
+
+/* 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+요소가 중앙으로 옴 
+
+position: fixed - 화면을 내려도 계속 유지됨
+
+이미지가 들어간다면 이미지 크기 만큼 width,height 설정해줘야함*/
+
+img {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* 버튼 위치 설정하기 */
+.btn {
+    position: absolute;
+    bottom: 20px;
+    RIGHT: 20px;
+    z-index: 999;
+}
+
+/* z-index를 넣으면 버튼이 나옴 */
+
+/* 기본 absolute 좌표는 오토좌표로 설정됨 
+밑에 따로 설정해줘야함*/
