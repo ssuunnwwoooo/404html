@@ -44,7 +44,7 @@
 
 #mainVisual .slick-dots {
     position: absolute;
-    bottom: 50px;
+    bottom: 150px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -67,5 +67,5 @@
 }
 
 #mainVisual .slick-dots li.slick-active button {
-    background: #333;
+    background: #a7a7a7;
 }
