@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html basic</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font.css">
 </head>
 
 <body>
@@ -16,13 +17,50 @@
         </p>
     </header>
 
+    <hr>
+    <i class="xi-heart"></i>
+    <style>
+        hr {
+            position: relative;
+            border: none;
+            border-top: 3px solid lightsteelblue;
+            overflow: visible;
+        }
 
+        hr::before {
+            content: "\ea10";
+            font-family: xeicon;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 10px;
+            color: lightpink;
+            border: 3px solid lightsteelblue;
+            border-radius: 50%;
+            background: #fff;
+        }
+    </style>
 
     <h2>기본 실습 layout</h2>
     <ul>
         <li><a href="./doc/basic.html" target="_blank">기본 실습 layout</a></li>
     </ul>
 
+
+    <hr>
+
+
+    <h2>CSS Layout Header Part</h2>
+    <ul>
+        <li><a href="./doc/header02.html" target="_blank">header layout 1200 width - 모바일 웹</a></li>
+        <li><a href="./doc/header03.html" target="_blank">header layout 1200 width</a></li>
+        <li><a href="./doc/header04.html" target="_blank">header layout 1200 width</a></li>
+    </ul>
+
+
+    <hr>
 
 
     <h2>요소의 가로배치</h2>
@@ -31,13 +69,14 @@
         <li><a href="./doc/02_float.html" target="_blank">요소의 가로배치 02 - float : 23.05.17</a></li>
     </ul>
 
-
+    <hr>
 
     <h2>background </h2>
     <ul>
         <li><a href="./css/background.html" target="_blank">background 배우기 !! </a></li>
     </ul>
 
+    <hr>
 
     <h2>video</h2>
     <ul>
@@ -46,10 +85,11 @@
         <li><a href="./doc/video3.html" target="_blank">동영상 + 지도</a></li>
     </ul>
 
+    <hr>
+
     <h2>요소의 겹침 01 </h2>
 
     <ul>
-
         <li><a href="./doc/position00.html" target="_blank">position에 대해 알아보기 00 - 기본</a></li>
         <li><a href="./doc/position01.html" target="_blank">position에 대해 알아보기 01 - POPUP창 만들기!</a></li>
         <li><a href="./doc/position02.html" target="_blank">position에 대해 알아보기 02 - 우는 얼굴 만들기!</a></li>
@@ -57,6 +97,7 @@
     </ul>
 
 
+    <hr>
 
 
     <h2>slider</h2>
@@ -67,6 +108,7 @@
     </ul>
 
 
+    <hr>
 
 
     <h2>slider - content</h2>
@@ -77,6 +119,9 @@
     </ul>
 
 
+    <hr>
+
+
     <h2>Tab menu 01 - display: none, block으로 공간을 제어하기</h2>
     <ul>
         <li>
@@ -85,20 +130,31 @@
     </ul>
 
 
+    <hr>
+
+
     <h2>가상 요소 - ::before , ::after</h2>
     <ul>
         <li><a href="./doc/pseudo-element01.html" target="_blank"> 가상 요소</a></li>
     </ul>
 
 
+    <hr>
+
 
     <h2>소메뉴 나오게 하기</h2>
-    <ul class="li"><a href="./doc/header01.html" target="_blank"> header</a></ul>
+    <ul>
+        <li><a href="./doc/header01.html" target="_blank"> header</a></li>
+    </ul>
 
+
+    <hr>
 
 
     <h2>애니메이션 요소 - 튀어나오는 자동차</h2>
-    <ul class="li"><a href="./doc/silck_main_animation01.html" target="_blank"> 현대자동차</a></ul>
+    <ul>
+        <li><a href="./doc/silck_main_animation01.html" target="_blank"> 현대자동차</a></li>
+    </ul>
 
 
     <!-- target="_blank" 새창으로 뜨기 -->
